@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved | RSRI</title>
+  <meta name="description" content="Donate or join as a volunteer to support RSRI programs." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="RSRI home">
+        <div class="brand-mark">RSRI</div>
+        <div>
+          <p class="brand-name">RED STRING RESCUE INC</p>
+          <p class="brand-sub">Community Relief & Compassion</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="get-involved.html" class="active">Get Involved</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container"><p class="eyebrow">Get Involved</p><h1>Support RSRI Through Giving and Service</h1><p class="lead">This page is production-ready with Netlify form handling.</p></div></section>
+
+    <section class="section"><div class="container grid-2">
+      <div>
+        <h2>Donation Intent</h2>
+        <p>Your contribution helps fund relief supplies, outreach, and case follow-up.</p>
+        <ul class="check-list">
+          <li>✅ EIN: 99-3523444</li>
+          <li>✅ Prioritized for direct services and delivery</li>
+          <li>✅ Shared outcomes and periodic updates</li>
+        </ul>
+      </div>
+      <form name="donation" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="donation" />
+        <label>Full Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Planned Amount (USD)<input type="number" name="amount" min="1" required /></label>
+        <label>Message (Optional)<textarea name="message" rows="3" placeholder="Tell us which area you want to support"></textarea></label>
+        <button type="submit" class="btn btn-primary">Submit Donation Intent</button>
+      </form>
+    </div></section>
+
+    <section class="section section-alt"><div class="container grid-2">
+      <div>
+        <h2>Volunteer Signup</h2>
+        <p>Join RSRI in outreach, logistics, event support, and direct community assistance.</p>
+      </div>
+      <form name="volunteer" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="volunteer" />
+        <label>Full Name<input type="text" name="volunteerName" required /></label>
+        <label>Contact (Email or Phone)<input type="text" name="contact" required /></label>
+        <label>Availability<select name="availability" required><option value="">Please select</option><option>Weekday daytime</option><option>Weekday evening</option><option>Weekend</option><option>Flexible schedule</option></select></label>
+        <label>Skills / Interests<input type="text" name="skills" placeholder="Example: event support, translation, logistics" /></label>
+        <button type="submit" class="btn btn-secondary">Submit Volunteer Application</button>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>RED STRING RESCUE INC (RSRI)</h3>
+        <p>Principal Officer: Brandon Philbrick</p>
+        <p>EIN: 99-3523444</p>
+      </div>
+      <div>
+        <h4>Mailing Address</h4>
+        <p>307 North Ridgewood Avenue<br/>Edgewater, FL 32132<br/>United States</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="get-involved.html">Donate & Volunteer</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> RED STRING RESCUE INC (RSRI). All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
